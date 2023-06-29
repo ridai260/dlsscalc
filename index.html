@@ -1,0 +1,22 @@
+<html>
+    <body>
+        <form onsubmit="event.preventDefault(); multiply();">
+            <label for="width">Width:</label>
+            <input type="number" id="width" value="1920" required>
+
+            <label for="height">Height:</label>
+            <input type="number" id="height" value="1080" required>
+
+            <select id="quality">
+                <option value="0.6666">Quality</option>
+                <option value="0.58">Balanced</option>
+                <option value="0.5">Performance</option>
+                <option value="0.33">Ultra Performance</option>
+            </select>              
+
+            <input type="submit" value="Calculate">
+        </form>
+        <p id="output">Result...</p>
+    </body>
+    <script src="index.js"></script>
+</html>
